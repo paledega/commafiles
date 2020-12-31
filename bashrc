@@ -38,6 +38,12 @@ fi
 export PS1="\[\033[1m\]\u@\h \[\033[0;31m\]\W \$ \[\033[00m\]"
 export PS2="\[\033[1m\]>\[\033[00m\] "
 # bazı önemli ama gereksiz işler
-rm -f ~/.bash_history
 alias vi=nano
 alias vim=nano
+export LANG=C
+export LANGUAGE=$LANG
+ğ(){
+    rm -fv ~/.bash_history
+    rm -rfv /tmp/* 2>/dev/null
+    rm -rfv ~/.cache 2>/dev/null
+}
