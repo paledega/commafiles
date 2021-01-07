@@ -5,7 +5,6 @@ set mark-symlinked-directories On
 set show-all-if-ambiguous On
 set show-all-if-unmodified On
 set visible-stats On
-set editing-mode nano
 set colored-completion-prefix on
 set mark-modified-lines on
 set menu-complete-display-prefix on
