@@ -4,7 +4,6 @@ include /usr/share/nano/extra/*.nanorc
 set constantshow
 set matchbrackets "(<[{)>]}"
 set multibuffer
-set mouse
 set smarthome
 set tabsize 2
 set nonewlines
