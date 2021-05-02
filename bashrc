@@ -41,6 +41,9 @@ export PS2="\[\033[1m\]>\[\033[00m\] "
 alias vi=nano
 alias vim=nano
 alias nano='nano -l -m -A -q -_ -x -w -T 2'
+alias gc='git commit'
+alias ga='git add'
+alias gpsh='git push'
 ğ(){
     rm -fv ~/.bash_history
     rm -rfv /tmp/* 2>/dev/null
