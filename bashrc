@@ -36,7 +36,7 @@ if ls --color -d . >/dev/null 2>&1; then  # GNU ls
 fi
 #PS1 PS2 
 export PSMODE=0 # Disable sulin bashrc mode
-export PS1="\[\033[1m\]\u@\h \[\033[0;31m\]\W \$ \[\033[00m\]"
+export PS1="\[\033[1m\]$$|\u@\h \[\033[0;31m\]\W \$ \[\033[00m\]"
 export PS2="\[\033[1m\]>\[\033[00m\] "
 # bazı önemli ama gereksiz işler
 alias vi=nano
