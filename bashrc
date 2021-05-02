@@ -40,7 +40,7 @@ export PS2="\[\033[1m\]>\[\033[00m\] "
 # bazı önemli ama gereksiz işler
 alias vi=nano
 alias vim=nano
-alias nano='nano -l -m -A -q -_ -x -w -T 2'
+alias nano='nano -l -q -x'
 alias gc='git commit'
 alias ga='git add'
 alias gpsh='git push'
