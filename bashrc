@@ -15,6 +15,7 @@ alias chown='chown --preserve-root'
 alias chmod='chmod --preserve-root'
 alias chgrp='chgrp --preserve-root'
 alias clear='echo -ne "\033c" ; clear'
+alias grh='grep -rnwi'
 alias hs='history | grep'
 alias ~="cd ~"
 alias ..='cd ..'
@@ -44,8 +45,16 @@ alias nano='nano -l -q -x'
 alias gc='git commit'
 alias ga='git add'
 alias gpsh='git push'
-ğ(){
+gg(){
     rm -fv ~/.bash_history
     rm -rfv /tmp/* 2>/dev/null
     rm -rfv ~/.cache 2>/dev/null
+}
+alias ğ='gg'
+# birkaç işe yarar çöp
+sudo(){
+    su -c "$@"
+}
+clear(){
+    echo -ne "\033c"
 }
