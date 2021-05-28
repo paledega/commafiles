@@ -1,0 +1,8 @@
+xterm*font:     *-fixed-*-*-*-18-*
+xterm*vt100*geometry: 85x35
+xterm*saveLines: 2000
+xterm*termName: xterm-color
+xterm*eightBitInput: false
+xterm*foreground: white
+xterm*background: black
+xterm*boldMode: false 
