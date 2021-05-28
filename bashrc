@@ -65,5 +65,10 @@ killwine(){
     killall winedbg
 }
 killport(){
-    lsof -i | grep LISTEN | grep :8000 | awk '{print $2;}' | xargs kill -9
+    lsof -i | grep LISTEN | grep :8000 | awk '{print $2}' | xargs kill -9 &>/dev/null
+}
+ssh_forvard(){
+    echo -n "Input source port: "; read source
+    echo -n "Input target port: "; read target
+    ssh -vvv -NR "$source":*:"$target" "$@"
 }
