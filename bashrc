@@ -58,3 +58,9 @@ sudo(){
 clear(){
     echo -ne "\033c"
 }
+killwine(){
+    ps aux | grep "\.exe" | grep -v grep | awk '{print $2}' | xargs kill -9 &>/dev/null
+    killall winedevice.exe &>/dev/null
+    killall wineserver &>/dev/null
+    killall winedbg
+}
