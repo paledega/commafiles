@@ -64,3 +64,6 @@ killwine(){
     killall wineserver &>/dev/null
     killall winedbg
 }
+killport(){
+    lsof -i | grep LISTEN | grep :8000 | awk '{print $2;}' | xargs kill -9
+}
