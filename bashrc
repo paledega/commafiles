@@ -46,9 +46,10 @@ alias gc='git commit'
 alias ga='git add'
 alias gpsh='git push'
 gg(){
-    rm -fv ~/.bash_history
-    rm -rfv /tmp/* 2>/dev/null
-    rm -rfv ~/.cache 2>/dev/null
+    rm -vrf ~/.cache
+    rm -vrf ~/.thumbnails
+    rm -vrf ~/.local/share/TelegramDesktop/tdata/user_data
+    rm -vrf /tmp/*
 }
 alias ğ='gg'
 # birkaç işe yarar çöp
